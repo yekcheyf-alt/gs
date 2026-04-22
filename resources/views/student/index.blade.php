@@ -46,6 +46,12 @@
                                         <td>Johnella Dondon</td>
                                         <td>johnelladondon@sample.com</td>
                                     </tr>
+                                    <tr>
+                                        <td>John Cedric</td>
+                                        <td>johnecedric@sample.com</td>
+                                    </tr>
+                                        
+                                        
                                 {{-- @endforeach --}}
                                 </tbody>
                             </table>

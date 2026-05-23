@@ -8,12 +8,12 @@ class EmployeeController extends Controller
 {
     public function index () {
         $employee = Employee::all();
-        return view ('employee.index', compact('employee'));
+        return view ('employee.index', compact('employees'));
     
     }
     
     public function create () {
-        return view ('employee.create');
+        return view ('employees.create');
         
     }
 
@@ -26,12 +26,12 @@ class EmployeeController extends Controller
             'zipcode' => $request->zipcode,
             'address' => $request->address
         ]);
-        return redirect()->route('employee.index');
+        return redirect()->route('employees.index');
     }
 
     public function edit ($id) {
         $employee = Employee::find($id);
-        return view ('employee.edit', compact('employee'));
+        return view ('employees.edit', compact('employee'));
     }
 
     public function update (Request $request, $id) {
@@ -44,13 +44,13 @@ class EmployeeController extends Controller
             'zipcode' => $request->zipcode,
             'address' => $request->address
         ]);
-        return redirect()->route('employee.index');
+        return redirect()->route('employees.index');
     }
 
     public function destroy ($id) {
         $employee = Employee::find($id);
         $employee->delete();
-        return redirect()->route('employee.index');
+        return redirect()->route('employees.index');
     }
  
 }

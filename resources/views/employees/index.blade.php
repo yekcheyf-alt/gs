@@ -21,10 +21,10 @@
                     <tr>
                         <td>{{ $student->fname }}</td>
                         <td>{{ $student->lname }}</td>
-                        <td>{{ $student->midname }}</td>
+                        <td>{{ $student->mname }}</td>
                         <td>{{ $student->age }}</td>
                         <td>{{ $student->address }}</td>
-                        <td>{{ $student->zip }}</td>
+                        <td>{{ $student->zipcode }}</td>
                         <td>
                             <a href="{{ route('employees.edit', $student->id) }}" class="btn btn-sm btn-outline-primary">Edit</a>
                             <form action="{{ route('employees.delete', $student->id) }}" method="POST" style="display: inline;">

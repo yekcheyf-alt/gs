@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <h1>Add New Student</h1>
-        <form action="{{ route('student.store') }}" method="POST">
+        <h1>Add New Employee</h1>
+        <form action="{{ route('employees.store') }}" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="fname" class="form-label">First Name</label>
@@ -14,8 +14,8 @@
                 <input type="text" class="form-control" id="lname" name="lname" required>
             </div>
             <div class="mb-3">
-                <label for="midname" class="form-label">Middle Name</label>
-                <input type="text" class="form-control" id="midname" name="midname">
+                <label for="mname" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="mname" name="mname">
             </div>
             <div class="mb-3">
                 <label for="age" class="form-label">Age</label>
@@ -26,8 +26,8 @@
                 <input type="text" class="form-control" id="address" name="address" required>
             </div>
             <div class="mb-3">
-                <label for="zip" class="form-label">Zip Code</label>
-                <input type="text" class="form-control" id="zip" name="zip" required>
+                <label for="zipcode" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="zipcode" name="zipcode" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

@@ -30,10 +30,10 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ route ('student.index') }}" class="nav-link">
+                <a href="{{ route ('employees.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        {{ __('Student Management') }}
+                        {{ __('Employee Management') }}
                     </p>
                 </a>
             </li>
